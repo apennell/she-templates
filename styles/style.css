@@ -1,1 +1,47 @@
 /* Add your custom CSS here */
+
+/*
+:root is a CSS pseudo-class (https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) that
+matches the root element of a document, which is <html> in HTML. This allows us to declare global
+CSS variables to store properties that can be accessed and reused by any element in the document.
+*/
+:root {
+  --primary-color: #ba68c8;
+  --secondary-color: #ff8a65;
+  --tertiary-color: #ffc107;
+}
+
+/* Utility classes */
+
+.primary-bg {
+  background-color: #ba68c8; /* IE fallback */
+  background-color: var(--primary-color);
+}
+
+.secondary-bg {
+  background-color: #ff8a65; /* IE fallback */
+  background-color: var(--secondary-color);
+}
+
+.primary-text {
+  color: #ba68c8; /* IE fallback */
+  color: var(--primary-color);
+}
+
+.secondary-text {
+  color: #ff8a65; /* IE fallback */
+  color: var(--secondary-color);
+}
+
+/* /Utility classes */
+
+.cta-container {
+  background: linear-gradient(var(#ffc107), var(#ff8a65)); /* IE fallback */
+  background: linear-gradient(var(--tertiary-color), var(--secondary-color));
+  padding: 75px 0;
+}
+
+.custom-footer {
+  background: linear-gradient(var(#ff8a65), var(#ba68c8)); /* IE fallback */
+  background: linear-gradient(var(--secondary-color), var(--primary-color));
+}

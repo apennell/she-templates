@@ -4,13 +4,33 @@
 
 By [Annie Pennell](http://anniepennell.com/) | [GitHub](https://github.com/apennell) | [LinkedIn](https://www.linkedin.com/in/anniepennell/)
 
+
 ## Table of Contents
 
-## Technologies
+1. [Technologies](#technologies-and-dependencies)
+2. [Getting Started](#getting-started)
+3. [Code Structure](#code-structure)
+  * [`index.html`: Make it say what you want](#indexhtml-make-it-say-what-you-want)
+    * [`<!DOCTYPE html>`](#doctype-html)
+    * [`HEAD`](#head)
+    * [`BODY`](#body)
+  * [`/styles`: Make it look good with CSS](#styles-make-it-look-good-with-css)
+    * [CSS variables](#css-variables)
+    * [Responsiveness](#responsiveness)
+  * [`/scripts`: Make it do cool stuff with JavaScript](#scripts-make-it-do-cool-stuff-with-javascript)
+4. [Customizing your site](#customizing-your-site)
+  * [HTML elements](#html-elements)
+  * [HTML classes](#html-classes)
+  * [Navigation bar](#navigation-bar)
+  * [Icons](#icons)
+5. [Releasing your site](#releasing-your-site)
+6. [Making your site do even more](#making-your-site-do-even-more)
 
-This simple boilerplate uses HTML, CSS, Javascript, Materialize
 
-## Dependencies
+## Technologies and Dependencies
+
+This simple boilerplate uses HTML, CSS, Javascript, [jQuery](https://jquery.com/), and [Materialize](https://materializecss.com/).
+
 
 ## Getting Started
 
@@ -20,15 +40,16 @@ This simple boilerplate uses HTML, CSS, Javascript, Materialize
 4. To view your changes, open `index.html` in your web browser
 
 
-# Code Structure
+## Code Structure
 
-## `index.html`: Make it say what you want
+### `index.html`: Make it say what you want
 
-### `<!DOCTYPE html>`
+#### `<!DOCTYPE html>`
 
 * [TODO: expand on this]
 
-### `HEAD`
+
+#### `HEAD`
 
 * Import CSS files, fonts, and any scripts needed immediately when browser starts loading
 * For improved performance, add scripts at the end of `body` wherever possible so that the content isn't held up before beginning to render
@@ -37,33 +58,55 @@ This simple boilerplate uses HTML, CSS, Javascript, Materialize
 * [TODO: Expand on using Materialize framework and Material UI]
 * [TODO: Expand on adding fonts]
 
-### `BODY`
+
+#### `BODY`
 
 * Page content
 * Import scripts at the bottom, before closing `</body>`
 
-## `/styles`: Make it look good with CSS
 
-## `/scripts`: Make it do cool stuff with JavaScripts
+### `/styles`: Make it look good with CSS
+
+#### CSS variables
+
+
+#### Responsiveness
+
+
+### `/scripts`: Make it do cool stuff with JavaScript
 
 * jQuery
 
 
-# Customizing your site
+## Customizing your site
 
-## HTML elements
+### HTML elements
 
-## HTML classes
 
-## Navigation bar
+### HTML classes
+
+
+### Navigation bar
 
 * `nav` element
 
-# Releasing your site
+
+### Icons
+
+* All of [Google's Material Design icons](https://material.io/resources/icons/?style=baseline) are
+available because we imported them into the `HEAD` of our Index.html file using a CDN link. Search
+for [all options here](https://material.io/resources/icons/?style=baseline).
+* Another popular option is [Font Awesome](https://fontawesome.com/). If you'd like to use this
+instead, remove `<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">`
+from the `HEAD` of Index.html so that you don't import unnecessary code.
+
+
+## Releasing your site
 
 * [TODO: gitpages]
 
-# Making your site do even more
+
+## Making your site do even more
 
 * `create-react-app`
 * Node.js
