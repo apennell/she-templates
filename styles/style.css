@@ -7,11 +7,59 @@ CSS variables to store properties that can be accessed and reused by any element
 */
 :root {
   --primary-color: #ba68c8;
-  --secondary-color: #ff8a65;
+  --primary-color-lighten-1: #ce93d8;
+  --primary-color-darken-1: #ab47bc;
+  --secondary-color: #ff7043;
+  --secondary-color-lighten-1: #ff8a65;
+  --secondary-color-darken-1: #ff5722;
   --tertiary-color: #ffc107;
+/*  --primary-font: 'Proza Libre', sans-serif;
+  --secondary-font: 'Cormorant Garamond', serif;*/
+  --primary-font: 'Libre Baskerville', serif;
+  --secondary-font: 'Libre Franklin', sans-serif;
 }
 
-/* Utility classes */
+
+/* ===== Materialize Overrides ===== */
+body {
+  font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+  font-family: var(--secondary-font);
+}
+
+h5 {
+  line-height: 135%;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  background-color: var(--primary-color);
+  font-family: var(--secondary-font);
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: var(--primary-color-darken-1);
+}
+
+.brand-logo {
+  height: 44px;
+  margin: 10px 0;
+}
+
+/* ===== /Materialize Overrides ===== */
+
+
+/* ===== Utility classes ===== */
 
 .primary-bg {
   background-color: #ba68c8; /* IE fallback */
@@ -19,7 +67,7 @@ CSS variables to store properties that can be accessed and reused by any element
 }
 
 .secondary-bg {
-  background-color: #ff8a65; /* IE fallback */
+  background-color: #ff7043; /* IE fallback */
   background-color: var(--secondary-color);
 }
 
@@ -29,19 +77,24 @@ CSS variables to store properties that can be accessed and reused by any element
 }
 
 .secondary-text {
-  color: #ff8a65; /* IE fallback */
+  color: #ff7043; /* IE fallback */
   color: var(--secondary-color);
 }
 
-/* /Utility classes */
+/* ===== /Utility classes ===== */
+
 
 .cta-container {
-  background: linear-gradient(var(#ffc107), var(#ff8a65)); /* IE fallback */
+  background: linear-gradient(var(#ffc107), var(#ff7043)); /* IE fallback */
   background: linear-gradient(var(--tertiary-color), var(--secondary-color));
   padding: 75px 0;
 }
 
+.cta-container h5 {
+  font-family: var(--primary-font);
+}
+
 .custom-footer {
-  background: linear-gradient(var(#ff8a65), var(#ba68c8)); /* IE fallback */
+  background: linear-gradient(var(#ff7043), var(#ba68c8)); /* IE fallback */
   background: linear-gradient(var(--secondary-color), var(--primary-color));
 }
