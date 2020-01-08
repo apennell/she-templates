@@ -13,8 +13,6 @@ CSS variables to store properties that can be accessed and reused by any element
   --secondary-color-lighten-1: #ff8a65;
   --secondary-color-darken-1: #ff5722;
   --tertiary-color: #ffc107;
-/*  --primary-font: 'Proza Libre', sans-serif;
-  --secondary-font: 'Cormorant Garamond', serif;*/
   --primary-font: 'Libre Baskerville', serif;
   --secondary-font: 'Libre Franklin', sans-serif;
 }
@@ -22,6 +20,7 @@ CSS variables to store properties that can be accessed and reused by any element
 
 /* ===== Materialize Overrides ===== */
 body {
+  font-family: 'Libre Baskerville', serif; /* IE fallback */
   font-family: var(--primary-font);
 }
 
@@ -31,6 +30,7 @@ h3,
 h4,
 h5,
 button {
+  font-family: 'Libre Franklin', sans-serif; /* IE fallback */
   font-family: var(--secondary-font);
 }
 
@@ -41,13 +41,16 @@ h5 {
 .btn,
 .btn-large,
 .btn-small {
+  background-color: #ba68c8; /* IE fallback */
   background-color: var(--primary-color);
+  font-family: 'Libre Franklin', sans-serif;
   font-family: var(--secondary-font);
 }
 
 .btn:hover,
 .btn-large:hover,
 .btn-small:hover {
+  background-color: #ab47bc; /* IE fallback */
   background-color: var(--primary-color-darken-1);
 }
 
@@ -91,6 +94,7 @@ h5 {
 }
 
 .cta-container h5 {
+  font-family: 'Libre Baskerville', serif; /* IE fallback */
   font-family: var(--primary-font);
 }
 

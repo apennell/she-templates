@@ -2,9 +2,10 @@
 
 [View Demo](https://apennell.github.io/she-templates/)
 
-**She Templates** is the most basic responsive site template needed for the girl who's ready to build an empire and needs to start right away!
+**She Templates** is the most basic responsive site template needed for the girl who's ready to
+build an empire and needs to start right away!
 
-By [Annie Pennell](http://anniepennell.com/) | [LinkedIn](https://www.linkedin.com/in/anniepennell/)
+By [Annie Pennell](http://anniepennell.com/)
 
 
 ## Table of Contents
@@ -23,7 +24,7 @@ By [Annie Pennell](http://anniepennell.com/) | [LinkedIn](https://www.linkedin.c
     * [Syntax](#syntax)
     * [Selectors and specificity](#selectors-and-specificity)
     * [Common CSS properties](#common-css-properties)
-    * [CSS variables](#css-variables)
+    * [Custom properties (CSS variables)](#custom-properties-css-variables)
     * [Responsiveness](#responsiveness)
 6. [Javascript: Make it do cool stuff](#javascript-make-it-do-cool-stuff)
 7. [Materialize CSS](#materialize-css)
@@ -40,7 +41,8 @@ By [Annie Pennell](http://anniepennell.com/) | [LinkedIn](https://www.linkedin.c
 
 ## Technologies and Dependencies
 
-This simple boilerplate uses HTML, CSS, Javascript, [jQuery](https://jquery.com/), and [Materialize](https://materializecss.com/).
+This simple boilerplate uses HTML, CSS, Javascript, [jQuery](https://jquery.com/), and
+[Materialize](https://materializecss.com/).
 
 [To top :arrow_up:](#she-templates)
 
@@ -48,10 +50,21 @@ This simple boilerplate uses HTML, CSS, Javascript, [jQuery](https://jquery.com/
 <!-- TODO: expand on specifics/ensure this works -->
 ## Getting Started
 
-1. [Clone locally](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) using `git clone https://github.com/apennell/she-templates.git`, or simply download
-2. Open the `she-templates` directory in your favorite text editor (my favorite is [Sublime Text](https://www.sublimetext.com/3))
-3. Add content to the `index.html` file, style it up in the `styles/style.css` file, or even make it do anything you can imagine by adding JavaScript to `scripts/script.js`!
-4. To view your changes, open `index.html` in your web browser
+1. From the [She Templates repository](https://github.com/apennell/she-templates), click on the
+green "Use this template" button
+2. Add a name for your repository (no spaces!), add a description if you want, then click "Create
+repository from template" button
+3. You should now see the same file structure in your shiny new repository! If you're using git,
+[clone locally](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) using
+`git clone https://github.com/apennell/she-templates.git`, otherwise click on the green "Clone or
+download" button, then click "Download ZIP"
+4. Unzip and open the downloaded directory in your favorite text editor (I use
+[Sublime Text](https://www.sublimetext.com/3), and another popular option is
+[VSCode](https://code.visualstudio.com/))
+5. Open `index.html` in your browser to view the site
+6. Add content to the `index.html` file, style it up in the `styles/style.css` file, and make it
+interactive by adding JavaScript to `scripts/script.js`!
+7. Go back to `index.html` in your web browser at any time and refresh to view changes
 
 [To top :arrow_up:](#she-templates)
 
@@ -60,10 +73,12 @@ This simple boilerplate uses HTML, CSS, Javascript, [jQuery](https://jquery.com/
 
 * **`README.md`**
   * Includes information about your project, instructions on how to get the code running, etc.
-  * Good practice to include if someone else is going to be looking at your code—or even for your future self!
+  * Good practice to include if someone else is going to be looking at your code—or even for your
+  future self!
 * **`index.html`**
   * Where we put our main content
-  * HTML describes the content and structure of a web page, and is the standard markup language for web pages
+  * HTML describes the content and structure of a web page, and is the standard markup language for
+  web pages
 * **`/styles`**
   * Where we put our CSS files, which is how we style our HTML content
   * CSS is a language that describes how the web browser should display an HTML document’s content
@@ -77,7 +92,9 @@ This simple boilerplate uses HTML, CSS, Javascript, [jQuery](https://jquery.com/
 * **`/images`**
   * Where we put any images that we want to save and display
 
+
 ### `index.html`
+
 Basic structure of an HTML document:
 ```html
 <!DOCTYPE html>
@@ -94,18 +111,24 @@ Basic structure of an HTML document:
 </html>
 ```
 
+
 #### `<!DOCTYPE html>`
+
 `DOCTYPE` tells the browser how to interpret the document so it can display the content correctly.
 Start your document with `<!DOCTYPE html>` to indicate that it's using HTML5, the latest version of HTML.
 
+
 #### `<html>`
+
 This is the root element of an HTML page.
+
 
 #### `<head>`
 
 * Wraps around all elements that aren't actual page content
 * `<meta>` tags allow us to pass certain information that the browser needs to know
-* `<title>` lets the browser know the site's name, which is used in the browser's title bar or page's tab
+* `<title>` lets the browser know the site's name, which is used in the browser's title bar or
+page's tab
 * `<link>` tag lets us import CSS files and fonts--either from local files (relative links) or
 cloud-hosted sources (absolute links)
 * You may add any scripts that are needed immediately when browser starts loading here, but for
@@ -122,6 +145,7 @@ held up before beginning to render
 
 ## HTML: Make it say what you want
 
+
 ### Tags
 
 * Tell the browser how to format our content
@@ -133,7 +157,8 @@ held up before beginning to render
   </div>
   ```
 * Determine which tag to use by the purpose of the content. Common examples include:
-  * `body`: this is used once and all tags are nested within this; to apply a style to all elements on a page, target `body`
+  * `body`: this is used once and all tags are nested within this; to apply a style to all elements
+  on a page, target `body`
   * `div`: a multipurpose tag that allows you to group and style multiple HTML elements together:
     ```html
     <div class="image-container">
@@ -160,6 +185,7 @@ held up before beginning to render
 
 
 ### Attributes
+
 * Attributes are like options that you can send to an HTML element, like:
   * class
   * id
@@ -170,9 +196,12 @@ held up before beginning to render
 
 
 ## CSS: Make it look good
+
 CSS controls the style of the HTML content
 
+
 #### Syntax
+
 ```css
 .primary-bg {
   background-color: #ba68c8;
@@ -183,16 +212,20 @@ h1, h2 {
   font-family: 'Libre Baskerville', serif;
 }
 ```
-* Every CSS rule-set contains at least one selector (`.primary-bg`) pointing to a declaration block (the curly braces `{}`)
+* Every CSS rule-set contains at least one selector (`.primary-bg`) pointing to a declaration block
+(the curly braces `{}`)
 * A declaration block contains one or more declarations separated by semicolons: `background-color: #ba68c8`
-* A declaration includes a CSS property name (`color`, `font-family`) and value (`#ffffff`, `'Libre Baskerville', serif`), separated by a colon
+* A declaration includes a CSS property name (`color`, `font-family`) and value (`#ffffff`,
+`'Libre Baskerville', serif`), separated by a colon
+
 
 #### Selectors and specificty
+
 CSS stands for "Cascading Style Sheets" and "cascading" refers to how the language handles deciding
 which rule to abide when multiple rules apply to one element. It follows this hierarchy:
-  1. id, eg `#header-1`
-  2. class, eg `.header-group`
-  3. HTML tag type, eg `header`
+  1. **id**, eg `#header-1`
+  2. **class**, eg `.header-group`
+  3. **HTML tag type**, eg `header`
 
 Given the following HTML and CSS, what color do you think "Title" will be?
 ```html
@@ -210,21 +243,102 @@ header {
 }
 ```
 
-The answer is red! Although all 3 CSS rules target the same element, `#header-1` wins with the greatest specificity. *However*, it's best to avoid using id for CSS and use classes or HTML tag types wherever possible.
+The answer is red! Although all 3 CSS rules target the same element, `#header-1` wins with the
+greatest specificity. *However*, it's best to avoid using id for CSS and use classes or HTML tag
+types wherever possible.
 
 
 #### Common CSS Properties
 
-* display, position
-* padding and margin
-* text formatting
-* colors: named, hex, rgb/rgba
+* [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display): sets whether the element
+is block or inline
+* [`position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position): sets how the element is
+positioned in a document. `static` is default, but some other properties depend on `position` being
+`relative` or `absolute` to work.
+* [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding): sets how much extra space
+is added around all 4 sides of the element, outside of the actual content but within the border.
+This space *is* considered to be inside the element and *is* included in its total height and width.
+* [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin): sets how much extra space is
+added around all 4 sides of the element, outside of the padding and border. This space *is not*
+considered inside the element and *is not* included in its total height and width.
+* There are a handful of options for setting
+[the appearance of text](https://developer.mozilla.org/en-US/docs/Web/CSS/font), including:
+    * [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family): specific or
+    generic names for the font, like `Helvetica` or `sans-serif`
+    * [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size): size of the font
+    * [`font-weight`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight): how bold the
+    font is (`400` is 'normal')
+    * [`line-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height): sets the height
+    of a line box, increasing or decreasing the space between text lines
+* [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color) sets the color of the element's
+text, while [`background-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+sets the color of the element's background. There are 5 ways to declare the value of the color:
+    * named: `pink`
+    * hex: `#ffc0cb`
+    * rgb (red, green, blue): `rgb(255, 192, 203)`
+    * rgba: `rgba(255, 192, 203, 1)`--same as rgb, but the final value represents transparency of
+    the color on a scale of `0` (fully transparent) to `1` (fully opaque)
+    * hsl (hue, saturation, lightness): `hsl(350, 100%, 88%)`
+    * hsla: `hsl(350, 100%, 88%, 1)`--same as hsl, but the final value represents transparency of
+    the color on a scale of `0` (fully transparent) to `1` (fully opaque)
 
 
-#### CSS variables
+#### Custom properties (CSS variables)
 
-* CSS variables allow us to define a property in one place and reuse it in many places.
-<!-- TODO: expand on this -->
+Commonly known as CSS variables,
+[custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+allow us to define a CSS property in one place and reuse it in many places throught the CSS
+document. In addition to letting you reference a color or font without copy-pasting the value over
+and over, one important benefit is that it allows you to easily make a change in one place. For
+example, this template is currently orange and purple, but you should be able to choose your own
+colors! If you want to use green and yellow, instead of finding all instances of all colors in the
+CSS and replacing them like you normally would, you can just change the variables at the top of the
+file and everywhere that was orange will immediately be green and everywhere that was purple will
+now be yellow.
+
+Set the property/variable using custom property notation, with the name of the variable on the left
+side, preceeded by 2 dashes:
+```css
+:root {
+  --primary-color: #ba68c8;
+  --primary-font: 'Libre Baskerville', serif;;
+}
+```
+`:root` is the common choice for where to define the custom properties, because `:root` is the very
+highest level element of our HTML document, which means the property will be available for all
+elements in the document.
+
+The property name can be whatever you want, but it should be something useful and easy to reference.
+It can be better to use names that describe the function of the property, rather than specifics. For
+example, instead of calling the orange color `--orange`, we're using `--primary-color` because that
+will still make sense if we want to change the main color to green.
+
+To use the custom property, place it where you want to use it and access it using the `var()` function:
+```css
+h1 {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+}
+```
+
+Something to keep in mind when working with CSS and JavaScript is that not all browsers can handle
+fun "new" (or not so new!) properties and methods. When in doubt, check it on
+[Can I use](https://caniuse.com/) for compatibility. You may choose not to care what users on
+Internet Explorer see, but if a significant amount of your users aren't using modern browsers,
+provide fallbacks for them so they can still use your site.
+Custom CSS properties don't have [any support](https://caniuse.com/#feat=css-variables) on IE and
+older versions of other browsers. If you want to control what users on unsupported browsers see,
+then declare the property twice, with the standard value on the first and the variable on the
+second. Remember what we learned about [specifity](#selectors-and-specificity)? CSS will use the
+first declaration first, then override it with the second one, which is the custom property value.
+Since unsupported browsers won't be able to do anything with the weird `var()` property value, it
+will just stick with the first fallback value instead.
+```css
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-family: var(--primary-font);
+}
+```
 
 
 #### Responsiveness
@@ -256,7 +370,21 @@ mobile sizes. An iPhone X, for example, is 375px wide, while an iPad is 768px wi
 
 ### JavaScript: Make it do cool stuff
 
-JavaScript makes the page interactive. We can add this functionality between `<script></script>` tags at the bottom of the `<body>` tag in index.html, but if we have a lot, it's best to abstract it into a separate JavaScript file. You may even choose to create multiple JS files so that the code is more manageable, organized, and contained.
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) makes the page interactive. We
+can add this functionality between `<script></script>` tags at the bottom of the `<body>` tag in
+index.html, but if we have a lot, it's best to abstract it into a separate JavaScript file. You may
+even choose to create multiple JS files so that the code is more manageable, organized, and
+contained.
+
+We won't go deep into JavaScript land, but the [Materialize CSS](#materialize-css) framework
+included with this template
+[includes a handful of useful JS helpers](https://materializecss.com/auto-init.html) ready for you
+to use. Try out a [dropdown menu](https://materializecss.com/dropdown.html),
+[image carousel](https://materializecss.com/carousel.html), or a
+[tooltip](https://materializecss.com/tooltips.html)! Make your browser skinny so that the navbar
+collapses into a "hamburger" icon, then click that icon. See the drawer pop out of the left side and
+display the hidden links? That's JavaScript, courtesy of
+[Materialize](https://materializecss.com/sidenav.html)!
 
 **jQuery** is a JavaScript library that provides utility functions for common chunks of code used
 in JavaScript so we can skip to the fun stuff. When we use `$`, we're calling jQuery.
@@ -272,71 +400,114 @@ that link from index.html for a slightly faster load time.
 
 ## Materialize CSS
 
-This template is using a CSS framework called `[Materialize CSS](https://materializecss.com/)`. Although we could do it all from scratch, CSS frameworks provide helpful startpoints for common code. In addition, the framework is based on Google's [Material Design](https://material.io), which has [guidelines](https://material.io/design/) you can follow to create a great looking site even if you don't have design experience.
+This template is using a CSS framework called [Materialize CSS](https://materializecss.com/).
+Although we could do it all from scratch, CSS frameworks provide helpful startpoints for common
+code. In addition, the framework is based on Google's [Material Design](https://material.io), which
+has [guidelines](https://material.io/design/) you can follow to create a great looking site even if
+you don't have design experience.
 Some very useful parts of Materialize include:
-* [Grid](https://materializecss.com/grid.html) makes it easy to lay out rows and columns that change responsively so that the content looks good on any screen size
-* [Helpers](https://materializecss.com/helpers.html) provide quick solutions to common CSS issues, like vertical alignment, hiding and showing content, and text truncation.
+* [Grid](https://materializecss.com/grid.html) makes it easy to lay out rows and columns that change
+responsively so that the content looks good on any screen size
+* [Helpers](https://materializecss.com/helpers.html) provide quick solutions to common CSS issues,
+like vertical alignment, hiding and showing content, and text truncation.
 * [Styled buttons](https://materializecss.com/buttons.html)
-* [Navbar](https://materializecss.com/navbar.html), which functions well on mobile device and desktop browsers
+* [Navbar](https://materializecss.com/navbar.html), which functions well on mobile device and
+desktop browsers
 * [Icons](https://materializecss.com/icons.html)
-* [Modals](https://materializecss.com/modals.html) open a smaller window above the other content for dialog boxes, confirmations, or additional content
+* [Modals](https://materializecss.com/modals.html) open a smaller window above the other content for
+dialog boxes, confirmations, or additional content
 * [Styled form components](https://materializecss.com/text-inputs.html)
 
-If you don't want to use Materialize CSS, delete the JavaScript files (materialize.min.js and materialize.js) from `/scripts`, delete the CSS files (materialize.min.css and materialize.css), and remove the `<link>` to that stylesheet and `<script>` to that script file from index.js.
+And when you're trying to understand something you can't figure out from the docs? Search for your
+question on [Stack Overlflow](https://stackoverflow.com/questions/tagged/materialize) and see if
+it's already been asked and answered!
+
+If you don't want to use Materialize CSS, delete the JavaScript files (materialize.min.js and
+materialize.js) from `/scripts`, delete the CSS files (materialize.min.css and materialize.css), and
+remove the `<link>` to that stylesheet and `<script>` to that script file from index.js.
 
 A popular alternative to consider is Twitter's [Bootstrap](https://getbootstrap.com/).
 
-[To top :arrow_up:](#she-templates)
-
-
-## Customizing your site
-
-### Colors and fonts
-<!-- TODO expand on this -->
-
-
-### Navigation bar
-
-* `nav` element
-<!-- TODO expand on this -->
-
-
-### Header
-<!-- TODO expand on this -->
-
-
-### Additional content
-<!-- TODO expand on this -->
-
 
 ### Icons
+
 * All of [Google's Material Design icons](https://material.io/resources/icons/?style=baseline) are
 available because we imported them into the `HEAD` of our Index.html file using a CDN link. Search
 for [all options here](https://material.io/resources/icons/?style=baseline).
 * Another popular option is [Font Awesome](https://fontawesome.com/). If you'd like to use this
-instead, remove `<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">`
-from the `HEAD` of Index.html so that you don't import unnecessary code.
+instead, remove
+`<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">` from the
+`HEAD` of Index.html so that you don't import unnecessary code.
 
 [To top :arrow_up:](#she-templates)
 
 
 ## Releasing your site
-* [TODO: gitpages]
+
+Ready to take your site live? There are plenty of options, both free and paid. A simple free option
+is [GitHub Pages](https://pages.github.com/), which will require you to create a
+[GitHub](https://github.com/) account and a repository for this code. That's a very important step
+for any developer, so don't be afraid to take it!
+
+If you don't know [git](https://git-scm.com/) and aren't ready to learn yet, GitHub has made it easy
+to create a code repository and deploy it to GitPages from within your GitHub dashboard without
+entering the spooky terminal.
+[This tutorial](https://medium.com/javascript-in-plain-english/how-to-host-a-static-website-for-free-7a2a959f5e4)
+will take you through the steps.
+
+If you already know a bit of git and are able to
+[create a repository locally from your terminal](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository),
+there's a nice [walk-through tutorial here](https://www.thinkful.com/learn/a-guide-to-using-github-pages/start/)
+that will show you how to deploy your local repo to GitHub Pages.
+
+If you own a custom domain name, you can even
+[configure your GitHub Pages site](https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site)
+to use it.
+
+If you have a lot of content to host, note that GitHub has a limiy of 1GB. A highly rated service
+for deploying static sites (frontend only, no backend) is [Netlify](https://www.netlify.com/), which
+offers a lot for free. They even can help with managing forms without needing server-side code!
+
+Amazon's [AWS](https://aws.amazon.com/) is also very popular, with many cloud hosting options and
+both free and paid tiers. Here's a
+[good guide](https://www.freecodecamp.org/news/a-beginners-guide-on-how-to-host-a-static-site-with-aws/)
+on deploying to AWS.
+
+Did you take your app way beyond the scope of this static site template? Then check out
+[Heroku](https://www.heroku.com/)!
 
 [To top :arrow_up:](#she-templates)
 
 
 ## Making your site do even more
-* `create-react-app`
-* Node.js
-* Ruby on Rails
+
+If you've taken your static site as far as it can go and want to keep learning and building, here
+are some next steps:
+
+* Loving JavaScript and ready to make it do way more? Get to know the most popular current frontend
+framework, [React](https://reactjs.org/), by starting an app using
+[`create-react-app`](https://github.com/facebook/create-react-app). Run just one command and have a
+modern web app created immediately, then make it your own!
+* Loving JavaScript and curious to learn the backend? Then [Node.js](https://nodejs.org/en/) might
+be for you. Node.js allows you to build a backend using JavaScript.
+* Think JavaScript is okay, but want to see what else is out there?
+[Ruby on Rails](https://rubyonrails.org/) is a popular web application framework that's pretty
+[quick to get started](https://www.ruby-lang.org/en/documentation/quickstart/) working with.
 
 [To top :arrow_up:](#she-templates)
 
 
 ## Alternatives to coding your own from scratch
-* Wordpress
-* Squarespace
-* Wix
+
+If you need to go from 0 to 100 and have a site up immediately without fiddling too much with the
+code, there are other ways to make that happen.
+
+* [Wordpress](https://wordpress.org/) is a free tool that lets you create a website, blog, or app
+using little to no coding, but you can also add lots of code customization in if that's something
+you're up for.
+* It's not free, but [Squarespace](https://www.squarespace.com/) is a popular, modern, easy-to-use
+way to build a website without coding. It does provide options for customizing code with CSS, but
+not to the extent that Wordpress does.
+* [Wix](https://www.wix.com/) is another popular website builder, which offers free and paid plans.
 
 [To top :arrow_up:](#she-templates)
