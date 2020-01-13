@@ -6,13 +6,13 @@ matches the root element of a document, which is <html> in HTML. This allows us 
 CSS variables to store properties that can be accessed and reused by any element in the document.
 */
 :root {
-  --primary-color: #ba68c8;
-  --primary-color-lighten-1: #ce93d8;
-  --primary-color-darken-1: #ab47bc;
-  --secondary-color: #ff7043;
+  --primary-color: #81d4fa; /* blue */
+  --primary-color-lighten-1: #b3e5fc;
+  --primary-color-darken-1: #4fc3f7;
+  --secondary-color: #ff7043; /* orange */
   --secondary-color-lighten-1: #ff8a65;
   --secondary-color-darken-1: #ff5722;
-  --tertiary-color: #ffc107;
+  --tertiary-color: #ffeb3b;
   --primary-font: 'Libre Baskerville', serif;
   --secondary-font: 'Libre Franklin', sans-serif;
 }
@@ -41,8 +41,8 @@ h5 {
 .btn,
 .btn-large,
 .btn-small {
-  background-color: #ba68c8; /* IE fallback */
-  background-color: var(--primary-color);
+  background-color: #ff7043; /* IE fallback */
+  background-color: var(--secondary-color);
   font-family: 'Libre Franklin', sans-serif;
   font-family: var(--secondary-font);
 }
@@ -50,13 +50,20 @@ h5 {
 .btn:hover,
 .btn-large:hover,
 .btn-small:hover {
-  background-color: #ab47bc; /* IE fallback */
-  background-color: var(--primary-color-darken-1);
+  background-color: #ff5722; /* IE fallback */
+  background-color: var(--secondary-color-darken-1);
 }
 
-.brand-logo {
-  height: 44px;
-  margin: 10px 0;
+nav .brand-logo {
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+}
+
+.logo-em {
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-style: italic;
+  font-size: 2.1rem;
 }
 
 /* ===== /Materialize Overrides ===== */
@@ -84,12 +91,16 @@ h5 {
   color: var(--secondary-color);
 }
 
+.no-shadow {
+  box-shadow: none;
+}
+
 /* ===== /Utility classes ===== */
 
 
 .cta-container {
-  background: linear-gradient(var(#ffc107), var(#ff7043)); /* IE fallback */
-  background: linear-gradient(var(--tertiary-color), var(--secondary-color));
+  background: linear-gradient(var(#ff7043), var(#ffc107)); /* IE fallback */
+  background: linear-gradient(var(--secondary-color), var(--tertiary-color));
   padding: 75px 0;
 }
 
