@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHE TEMPLATES</title>
 
-  <!-- Import CSS files and fonts -->
+  <!-- Import CSS files and fonts from external sources -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Proza+Libre&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Libre+Franklin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/materialize.min.css"  type="text/css" media="screen,projection">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Include our custom stylesheets last so they override imported library styles -->
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
@@ -138,7 +140,10 @@
 
   <!-- JavaScript placed at end of body for optimized loading -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="scripts/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+  <!-- Include custom script last because it depends on code in the libraries to run -->
   <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
