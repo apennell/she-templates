@@ -155,6 +155,7 @@ nav .brand-logo {
 #image-section-2 {
   /* Set image and add light primary color overlay above image */
   background: linear-gradient(0deg, rgb(129, 212, 250, 0.3), rgba(129, 212, 250, 0.3)), url("../images/christina-wocintechchat-com-unsplash-2.jpg");
+  background-position-x: center;
   background-position-y: center;
   background-size: cover;
 }
