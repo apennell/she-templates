@@ -1,21 +1,5 @@
 // Add your custom JavaScript in this file
 
-// Everything inside this function will fire once the DOM is ready for JS
-$(function() {
-
-  // Activate Materialize's sidenav animation with jQuery
-  $('.sidenav').sidenav();
-
-  // As the user scrolls, call scrollFunction
-  window.onscroll = function() {
-    scrollFunction();
-  };
-
-  // Start custom JS here!
-
-}); // end of document ready
-
-
 function scrollFunction() {
   /**
    *Check what position on the page the scrollbar is, so that no-shadow class is only applied while
@@ -27,3 +11,18 @@ function scrollFunction() {
     $('.navbar-fixed nav').removeClass('no-shadow');
   }
 }
+
+// Everything inside this function will fire once the DOM is ready for JS
+$(function() {
+
+  // Activate Materialize's sidenav animation with jQuery
+  $('.sidenav').sidenav();
+
+  // As the user scrolls, call scrollFunction
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  // ====== Start custom JS below here! ======
+
+}); // end of document ready

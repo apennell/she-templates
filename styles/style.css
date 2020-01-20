@@ -13,14 +13,17 @@ CSS variables to store properties that can be accessed and reused by any element
   --secondary-color-lighten-1: #ff8a65;
   --secondary-color-darken-1: #ff5722;
   --tertiary-color: #ffeb3b;
-  --primary-font: 'Libre Baskerville', serif;
-  --secondary-font: 'Libre Franklin', sans-serif;
+  --primary-font: 'Playfair Display', serif;
+  --secondary-font: 'Josefin Sans', sans-serif;
 }
 
 
 /* ===== Materialize Overrides ===== */
-body {
-  font-family: 'Libre Baskerville', serif; /* IE fallback */
+body,
+p,
+a,
+button {
+  font-family: 'Playfair Display', serif; /* IE fallback */
   font-family: var(--primary-font);
 }
 
@@ -28,9 +31,8 @@ h1,
 h2,
 h3,
 h4,
-h5,
-button {
-  font-family: 'Libre Franklin', sans-serif; /* IE fallback */
+h5 {
+  font-family: 'Josefin Sans', sans-serif; /* IE fallback */
   font-family: var(--secondary-font);
 }
 
@@ -43,8 +45,8 @@ h5 {
 .btn-small {
   background-color: #ff7043; /* IE fallback */
   background-color: var(--secondary-color);
-  font-family: 'Libre Franklin', sans-serif;
-  font-family: var(--secondary-font);
+  font-family: 'Playfair Display', serif;
+  font-family: var(--primary-font);
 }
 
 .btn:hover,
@@ -55,15 +57,17 @@ h5 {
 }
 
 nav .brand-logo {
+  font-family: 'Josefin Sans', sans-serif;
   font-family: var(--secondary-font);
   font-size: 1.6rem;
 }
 
 .logo-em {
   color: var(--primary-color);
+  font-family: 'Playfair Display', serif;
   font-family: var(--primary-font);
   font-style: italic;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
 }
 
 /* ===== /Materialize Overrides ===== */
@@ -102,11 +106,6 @@ nav .brand-logo {
   background: linear-gradient(var(#ff7043), var(#ffc107)); /* IE fallback */
   background: linear-gradient(var(--secondary-color), var(--tertiary-color));
   padding: 75px 0;
-}
-
-.cta-container h5 {
-  font-family: 'Libre Baskerville', serif; /* IE fallback */
-  font-family: var(--primary-font);
 }
 
 .custom-footer {

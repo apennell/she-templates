@@ -13,11 +13,11 @@ By [Annie Pennell](http://anniepennell.com/)
 1. [Technologies](#technologies-and-dependencies)
 2. [Getting Started](#getting-started)
 3. [Code Structure](#code-structure)
-    * [`index.html`](#indexhtml)
+4. [HTML: Make it say what you want](#html-make-it-say-what-you-want)
+    * [Basic HTML document structure](#basic-html-document-structure)
       * [`<!DOCTYPE html>`](#doctype-html)
       * [`HEAD`](#head)
       * [`BODY`](#body)
-4. [HTML: Make it say what you want](#html-make-it-say-what-you-want)
     * [Tags](#elements)
     * [Attributes](#attributes)
 5. [CSS: Make it look good](#css-make-it-look-good)
@@ -41,32 +41,39 @@ By [Annie Pennell](http://anniepennell.com/)
 
 ## Technologies and Dependencies
 
-This simple boilerplate uses HTML, CSS, Javascript, [jQuery](https://jquery.com/), and
-[Materialize](https://materializecss.com/).
+This simple boilerplate template uses [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML),
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS),
+[Javascript](https://developer.mozilla.org/en-US/docs/Web/javascript),
+[jQuery](https://jquery.com/), and [Materialize](https://materializecss.com/).
 
-[To top :arrow_up:](#she-templates)
+You will also need a code text editor, such as [VSCode](https://code.visualstudio.com/) or
+[Sublime Text](https://www.sublimetext.com/3), and a [GitHub account](https://github.com/join).
+
+[To top](#she-templates) :arrow_up:
 
 
 <!-- TODO: expand on specifics/ensure this works -->
 ## Getting Started
 
-1. From the [She Templates repository](https://github.com/apennell/she-templates), click on the
-green "Use this template" button
-2. Add a name for your repository (no spaces!), add a description if you want, then click "Create
-repository from template" button
-3. You should now see the same file structure in your shiny new repository! If you're using git,
+1. At the top of the [She Templates repository](https://github.com/apennell/she-templates), click
+on the green **Use this template** button
+2. Add a name for your repository (no spaces!), add a description for the site if you want, then
+click **Create repository from template** button
+3. You should now see the same file structure as this repo in your own shiny new repository! If
+you're using [git](https://git-scm.com/) in your terminal,
 [clone locally](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) using
-`git clone https://github.com/apennell/she-templates.git`, otherwise click on the green "Clone or
-download" button, then click "Download ZIP"
-4. Unzip and open the downloaded directory in your favorite text editor (I use
-[Sublime Text](https://www.sublimetext.com/3), and another popular option is
-[VSCode](https://code.visualstudio.com/))
-5. Open `index.html` in your browser to view the site
-6. Add content to the `index.html` file, style it up in the `styles/style.css` file, and make it
-interactive by adding JavaScript to `scripts/script.js`!
-7. Go back to `index.html` in your web browser at any time and refresh to view changes
+`git clone https://github.com/apennell/she-templates.git`, otherwise click on the green **Clone or
+download** button, then click **Download ZIP**
+4. Unzip the downloaded file then open the new directory in your favorite text editor (I like
+[VSCode](https://code.visualstudio.com/) and [Sublime Text](https://www.sublimetext.com/3))
+5. Open `index.html` in your browser to view the site. One way is to find the file, then select
+"Open with..." and choose the browser you want to use. Another is to open your browser (eg, Chrome)
+then select "Open file..." and find and select `index.html`.
+6. Back in the text editor, add content to the `index.html` file, style it up in the
+`styles/style.css` file, and make it interactive by adding JavaScript to `scripts/script.js`!
+7. Go back to `index.html` in your web browser at any time and refresh the page to view changes
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
 
 
 ## Code Structure
@@ -77,25 +84,28 @@ interactive by adding JavaScript to `scripts/script.js`!
   future self!
 * **`index.html`**
   * Where we put our main content
-  * HTML describes the content and structure of a web page, and is the standard markup language for
-  web pages
+  * [HTML](#html-make-it-say-what-you-want) describes the content and structure of a web page, and
+  is the standard markup language for web pages
 * **`/styles`**
-  * Where we put our CSS files, which is how we style our HTML content
+  * Where we put our [CSS](#css-make-it-look-good) files, which is how we style our HTML content
   * CSS is a language that describes how the web browser should display an HTML document’s content
   * Can include custom CSS files, eg `style.css`
-  * Can include imported CSS files from other libraries, eg `materialize.min.css` and `materialize.css`
+  * Can include imported CSS files from other libraries, eg `materialize.min.css`
 * **`/scripts`**
-  * Where we put our JavaScript code, which makes our site interactive
+  * Where we put our [JavaScript](#javascript-make-it-do-cool-stuff) code, which makes our site
+  interactive
   * JavaScript is a language that allows us to program the behavior of web pages
   * Can include custom JS files, eg `script.js`
-  * Can include imported JS files from other libraries, eg `materialize.min.js` and `materialize.js`
+  * Can include imported JS files from other libraries, eg `materialize.min.js`
 * **`/images`**
   * Where we put any images that we want to save and display
 
 
-### `index.html`
+## HTML: Make it say what you want
 
-Basic structure of an HTML document:
+
+### Basic HTML document structure
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -114,42 +124,48 @@ Basic structure of an HTML document:
 
 #### `<!DOCTYPE html>`
 
-`DOCTYPE` tells the browser how to interpret the document so it can display the content correctly.
-Start your document with `<!DOCTYPE html>` to indicate that it's using HTML5, the latest version of HTML.
+[`DOCTYPE`](https://guide.freecodecamp.org/html/doctype-declaration/) tells the browser how to
+interpret the document so it can display the content correctly.
+Start your document with `<!DOCTYPE html>` to indicate that it's using
+[HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5), the latest version of HTML.
 
 
 #### `<html>`
 
-This is the root element of an HTML page.
+This is the [root element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) of an
+HTML page.
 
 
 #### `<head>`
 
 * Wraps around all elements that aren't actual page content
-* `<meta>` tags allow us to pass certain information that the browser needs to know
-* `<title>` lets the browser know the site's name, which is used in the browser's title bar or
-page's tab
-* `<link>` tag lets us import CSS files and fonts--either from local files (relative links) or
-cloud-hosted sources (absolute links)
-* You may add any scripts that are needed immediately when browser starts loading here, but for
-improved performance, add scripts at the end of `body` wherever possible so that the content isn't
-held up before beginning to render
+* [`<meta>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) tags allow us to pass
+certain information that the browser needs to know
+* [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) lets the browser know
+the site's name, which is used in the browser's title bar or page's tab
+* [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag lets us import CSS
+files and fonts--either from local files (relative links) or internet sources (absolute links)
+* You may add any [scripts](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) that
+are needed immediately when browser starts loading here, but for improved performance, add scripts
+at the end of `body` wherever possible so that the content isn't held up by a long script before
+beginning to render
+* You may also add [style](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style) in the
+`<head>`, but it's preferable to keep CSS separate in a [stylesheet](#css-make-it-look-good)
+
 
 #### `<body>`
 
-* Page content that will render in the browser
-* Import scripts at the bottom, before closing `</body>`
-
-[To top :arrow_up:](#she-templates)
-
-
-## HTML: Make it say what you want
+* You only use one [`<body></body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
+tag in a document
+* Contains [age content that will render in the browser
+* Import scripts at the bottom, before closing `</body>` tag
 
 
 ### Tags
 
-* Tell the browser how to format our content
-* Need to start with an opening `<tag>` and end with a closing `</tag>`:
+* Tell the browser how to format our content with
+[HTML elements/tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+* Need to start with an opening tag: `< >` and end with a closing tag: `</ >`:
   ```html
   <div>
     <h1>Title</h1>
@@ -157,9 +173,9 @@ held up before beginning to render
   </div>
   ```
 * Determine which tag to use by the purpose of the content. Common examples include:
-  * `body`: this is used once and all tags are nested within this; to apply a style to all elements
-  on a page, target `body`
-  * `div`: a multipurpose tag that allows you to group and style multiple HTML elements together:
+  * [`body`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body): this is used only once and all tags are nested within this; to apply a style to all elements on a page, target `body`
+  * [`div`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div): a multipurpose tag that
+  allows you to group and style multiple HTML elements together:
     ```html
     <div class="image-container">
       <img src="images/logo.png">
@@ -168,36 +184,53 @@ held up before beginning to render
     ```
   * Semantic tags, which say something useful about the content they contain and are helpful for
   developers understanding code and for screen readers rendering accessible code, eg:
-    * `nav`, `main`, `footer`
-    * `section`, `article`
+    * [`nav`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav),
+    [`main`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main),
+    [`footer`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
+    * [`section`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section),
+    [`article`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)
   * Individual elements:
-    * `p`: paragraph text
-    * `h1`, `h2`, `h3`, `h4`, `h5`, `h6`: headings of diminishing size
-    * `a`: a link; must include `href` attribute, set to the url to navigate to when clicked, eg:
+    * [`p`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p): paragraph text
+    * `h1`, `h2`, `h3`, `h4`, `h5`, `h6`:
+    [headings](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements) of
+    diminishing size
+    * [`a`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a): a link (or "**a**nchor");
+    must include `href` attribute, set to the url to navigate to when clicked, eg:
     `<a href="http://sheleads.io/">`
-    * `button`: styled as a button and should receive instructions of what to do when clicked
-    * `img`: renders an image; should receive `src` attribute, set to the url or relative link
+    * [`button`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button): styled as a
+    button and should receive instructions of what to do when clicked
+    * [`img`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button): renders an image;
+    should receive `src` attribute, set to the url or relative link
     where the image can be found, eg:
     `<img src="images/logo.png" class="brand-logo">`
-  * `span`: can be used inside of an element tag to style a specific part of it, eg:
+  * [`span`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span): can be used inside of
+  an element tag to style a specific part of it, eg:
   `<p>This is <span class="bold">some</span> text.</p>`
-  * `input`/form elements
+  * [`input`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and many more
+  [form elements](https://developer.mozilla.org/en-US/docs/Learn/Forms) for gathering information
+  * And [so many more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)!
 
 
 ### Attributes
 
-* Attributes are like options that you can send to an HTML element, like:
-  * class
-  * id
-  * type (eg, input type)
+* [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) are like options that
+you can send to an HTML element so they behave a certain way, like:
+  * [class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class): a group
+  identifier that can be used on any kind of HTML element. One element can have multiple classes,
+  separated by spaces.
+  `<p class="white-text small">A Bit of Text</p>`
+  * [id](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id): a unique
+  identifier that can be used on any kind of HTML element. An element can only have one `id`.
+  `<p id="intro">This is some unique intro text.</p>`
+  * `type`: can only be used with certain elements, such as `button` and  `input`
 * `class` and `id` let you group and name tags, which can then be used to target with CSS and JavaScript.
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
 
 
 ## CSS: Make it look good
 
-CSS controls the style of the HTML content
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) controls the style of the HTML content
 
 
 #### Syntax
@@ -212,20 +245,24 @@ h1, h2 {
   font-family: 'Libre Baskerville', serif;
 }
 ```
-* Every CSS rule-set contains at least one selector (`.primary-bg`) pointing to a declaration block
-(the curly braces `{}`)
+* Every CSS rule-set contains at least one
+[selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) (`.primary-bg`) pointing
+to a [declaration block](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) (the curly braces
+`{}`)
 * A declaration block contains one or more declarations separated by semicolons: `background-color: #ba68c8`
-* A declaration includes a CSS property name (`color`, `font-family`) and value (`#ffffff`,
-`'Libre Baskerville', serif`), separated by a colon
+* A declaration includes a CSS
+[property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) name (`color`,
+`font-family`) and value (`#ffffff`, `'Libre Baskerville', serif`), separated by a colon
 
 
 #### Selectors and specificty
 
 CSS stands for "Cascading Style Sheets" and "cascading" refers to how the language handles deciding
-which rule to abide when multiple rules apply to one element. It follows this hierarchy:
-  1. **id**, eg `#header-1`
-  2. **class**, eg `.header-group`
-  3. **HTML tag type**, eg `header`
+which rule to abide when multiple rules apply to one element. It follows
+[this hierarchy](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity):
+  1. [**id**](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors), eg `#header-1`
+  2. [**class**](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors), eg `.header-group`
+  3. [**tag type**](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors), eg `header`
 
 Given the following HTML and CSS, what color do you think "Title" will be?
 ```html
@@ -235,9 +272,11 @@ Given the following HTML and CSS, what color do you think "Title" will be?
 #header-1 {
   color: red;
 }
+
 .header-group {
   color: purple;
 }
+
 header {
   color: blue
 }
@@ -290,7 +329,7 @@ Commonly known as CSS variables,
 allow us to define a CSS property in one place and reuse it in many places throught the CSS
 document. In addition to letting you reference a color or font without copy-pasting the value over
 and over, one important benefit is that it allows you to easily make a change in one place. For
-example, this template is currently orange and purple, but you should be able to choose your own
+example, this template is currently orange and blue, but you should be able to choose your own
 colors! If you want to use green and yellow, instead of finding all instances of all colors in the
 CSS and replacing them like you normally would, you can just change the variables at the top of the
 file and everywhere that was orange will immediately be green and everywhere that was purple will
@@ -365,87 +404,97 @@ or smaller; if it's wider than 720px, it will be `40px`.
 We always want to look at our website at many different browser widths, all the way down to common
 mobile sizes. An iPhone X, for example, is 375px wide, while an iPad is 768px wide.
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
 
 
 ### JavaScript: Make it do cool stuff
 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) makes the page interactive. We
 can add this functionality between `<script></script>` tags at the bottom of the `<body>` tag in
-index.html, but if we have a lot, it's best to abstract it into a separate JavaScript file. You may
-even choose to create multiple JS files so that the code is more manageable, organized, and
+index.html, but if we have a lot of JavaScript code, it's best to abstract it into a separate JavaScript file.
+You may even choose to create multiple JS files so that the code is more manageable, organized, and
 contained.
 
-We won't go deep into JavaScript land, but the [Materialize CSS](#materialize-css) framework
-included with this template
+The [Materialize CSS](#materialize-css) framework included with this template
 [includes a handful of useful JS helpers](https://materializecss.com/auto-init.html) ready for you
-to use. Try out a [dropdown menu](https://materializecss.com/dropdown.html),
+to use. Make your browser skinny so that the navbar collapses into a "hamburger" icon, then click
+that icon. See the drawer pop out of the left side and display the hidden links? That's JavaScript,
+courtesy of [Materialize](https://materializecss.com/sidenav.html)! We're initializing that code in
+script/script.js with the line `$('.sidenav').sidenav();`, which uses jQuery to target the element
+with the class `sidenav  ` and calls the Materialize helper method `sidenav()` on it.
+Try out a [dropdown menu](https://materializecss.com/dropdown.html),
 [image carousel](https://materializecss.com/carousel.html), or a
-[tooltip](https://materializecss.com/tooltips.html)! Make your browser skinny so that the navbar
-collapses into a "hamburger" icon, then click that icon. See the drawer pop out of the left side and
-display the hidden links? That's JavaScript, courtesy of
-[Materialize](https://materializecss.com/sidenav.html)!
+[tooltip](https://materializecss.com/tooltips.html)!
 
-**jQuery** is a JavaScript library that provides utility functions for common chunks of code used
-in JavaScript so we can skip to the fun stuff. When we use `$`, we're calling jQuery.
-In order to use it, though, we need to import the library! That's what we're doing at the bottom of
-index.html with `<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>`.
+[**jQuery**](https://jquery.com/) is a JavaScript library that provides utility functions for
+common chunks of code used in JavaScript so we can skip to the fun stuff. When we use `$`, we're
+calling jQuery. In order to use it, though, we need to import the library! That's what we're doing
+at the bottom of index.html with
+`<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>`.
 Because loading the library takes work, you only want to include it if you need and are using it.
 The Materialize CSS library we're using requires it for actions like opening the mobile menu, but
-if you're not using Materialize's JavaScript helpers and not using jQuery yourself, then remove
+*if you're not using Materialize's JavaScript helpers and not using jQuery yourself*, then remove
 that link from index.html for a slightly faster load time.
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
 
 
 ## Materialize CSS
 
 This template is using a CSS framework called [Materialize CSS](https://materializecss.com/).
-Although we could do it all from scratch, CSS frameworks provide helpful startpoints for common
-code. In addition, the framework is based on Google's [Material Design](https://material.io), which
-has [guidelines](https://material.io/design/) you can follow to create a great looking site even if
-you don't have design experience.
+Although we could do it all from scratch,
+[CSS frameworks](https://github.com/troxler/awesome-css-frameworks) provide helpful startpoints
+for common code. In addition, the framework is based on Google's
+[Material Design](https://material.io), which has [guidelines](https://material.io/design/) you
+can follow to create a great looking site even if you don't have design experience.
 Some very useful parts of Materialize include:
-* [Grid](https://materializecss.com/grid.html) makes it easy to lay out rows and columns that change
+* [Grid](https://materializecss.com/grid.html): makes it easy to lay out rows and columns that change
 responsively so that the content looks good on any screen size
-* [Helpers](https://materializecss.com/helpers.html) provide quick solutions to common CSS issues,
+* [Helpers](https://materializecss.com/helpers.html): provide quick solutions to common CSS issues,
 like vertical alignment, hiding and showing content, and text truncation.
 * [Styled buttons](https://materializecss.com/buttons.html)
-* [Navbar](https://materializecss.com/navbar.html), which functions well on mobile device and
-desktop browsers
+* [Navbar](https://materializecss.com/navbar.html): responsive navigation element
 * [Icons](https://materializecss.com/icons.html)
-* [Modals](https://materializecss.com/modals.html) open a smaller window above the other content for
-dialog boxes, confirmations, or additional content
+* [Modals](https://materializecss.com/modals.html): open a smaller window above the other content
+for dialog boxes, confirmations, or additional content
 * [Styled form components](https://materializecss.com/text-inputs.html)
 
 And when you're trying to understand something you can't figure out from the docs? Search for your
 question on [Stack Overlflow](https://stackoverflow.com/questions/tagged/materialize) and see if
 it's already been asked and answered!
 
-If you don't want to use Materialize CSS, delete the JavaScript files (materialize.min.js and
-materialize.js) from `/scripts`, delete the CSS files (materialize.min.css and materialize.css), and
-remove the `<link>` to that stylesheet and `<script>` to that script file from index.js.
+*If you don't want to use Materialize CSS*, delete the `<link>` to the Materialize CSS from the
+`<head>` of index.html
+(`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">`),
+delete the `<script>` calling the Materialize JS code from the bottom of the `<body>`
+(`<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>`).
+If you aren't using jQuery for anything else either, you can also remove that `<script>` tag.
 
-A popular alternative to consider is Twitter's [Bootstrap](https://getbootstrap.com/).
+A popular alternative to consider is Twitter's [**Bootstrap**](https://getbootstrap.com/).
 
 
 ### Icons
 
 * All of [Google's Material Design icons](https://material.io/resources/icons/?style=baseline) are
-available because we imported them into the `HEAD` of our Index.html file using a CDN link. Search
-for [all options here](https://material.io/resources/icons/?style=baseline).
-* Another popular option is [Font Awesome](https://fontawesome.com/). If you'd like to use this
-instead, remove
+available because we imported them into the `HEAD` of our Index.html file using a
+[CDN](https://developer.mozilla.org/en-US/docs/Glossary/CDN) link. Search for
+[all options here](https://materializecss.com/icons.html). To use the icon, add it in your HTML
+where you want it to appear using this syntax: `<i class="material-icons">arrow_back</i>`,
+replacing the content inside the `<i>` with the name of the icon you want. You can also change
+the size by adding one of these classes: `tiny`, `small`, `medium`, `large`.
+Eg: `<i class="large material-icons">cloud</i>`
+* Another popular font library is [Font Awesome](https://fontawesome.com/). If you'd like to use
+this instead, remove
 `<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">` from the
-`HEAD` of Index.html so that you don't import unnecessary code.
+`HEAD` of index.html so that you don't import unnecessary code.
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
 
 
 ## Releasing your site
 
 Ready to take your site live? There are plenty of options, both free and paid. A simple free option
-is [GitHub Pages](https://pages.github.com/), which will require you to create a
+is [**GitHub Pages**](https://pages.github.com/), which will require you to create a
 [GitHub](https://github.com/) account and a repository for this code. That's a very important step
 for any developer, so don't be afraid to take it!
 
@@ -465,18 +514,18 @@ If you own a custom domain name, you can even
 to use it.
 
 If you have a lot of content to host, note that GitHub has a limiy of 1GB. A highly rated service
-for deploying static sites (frontend only, no backend) is [Netlify](https://www.netlify.com/), which
+for deploying static sites (frontend only, no backend) is [**Netlify**](https://www.netlify.com/), which
 offers a lot for free. They even can help with managing forms without needing server-side code!
 
-Amazon's [AWS](https://aws.amazon.com/) is also very popular, with many cloud hosting options and
-both free and paid tiers. Here's a
+Amazon's [**AWS**](https://aws.amazon.com/) is also very popular, with many cloud hosting options
+and both free and paid tiers. Here's a
 [good guide](https://www.freecodecamp.org/news/a-beginners-guide-on-how-to-host-a-static-site-with-aws/)
 on deploying to AWS.
 
-Did you take your app way beyond the scope of this static site template? Then check out
-[Heroku](https://www.heroku.com/)!
+Did you take your site way beyond the scope of this static site template and have an app with a
+backend? Then check out [**Heroku**](https://www.heroku.com/)!
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
 
 
 ## Making your site do even more
@@ -484,17 +533,18 @@ Did you take your app way beyond the scope of this static site template? Then ch
 If you've taken your static site as far as it can go and want to keep learning and building, here
 are some next steps:
 
-* Loving JavaScript and ready to make it do way more? Get to know the most popular current frontend
-framework, [React](https://reactjs.org/), by starting an app using
+* *Loving JavaScript and ready to make it do way more?* Get to know the
+[most popular](https://2019.stateofjs.com/front-end-frameworks/) frontend framework,
+[React](https://reactjs.org/), by starting an app using
 [`create-react-app`](https://github.com/facebook/create-react-app). Run just one command and have a
 modern web app created immediately, then make it your own!
-* Loving JavaScript and curious to learn the backend? Then [Node.js](https://nodejs.org/en/) might
-be for you. Node.js allows you to build a backend using JavaScript.
-* Think JavaScript is okay, but want to see what else is out there?
+* *Loving JavaScript and curious to learn the backend?* Then [Node.js](https://nodejs.org/en/)
+might be for you. Node.js allows you to build a backend using JavaScript.
+* *Think JavaScript is okay, but want to see what else is out there?*
 [Ruby on Rails](https://rubyonrails.org/) is a popular web application framework that's pretty
 [quick to get started](https://www.ruby-lang.org/en/documentation/quickstart/) working with.
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
 
 
 ## Alternatives to coding your own from scratch
@@ -503,11 +553,13 @@ If you need to go from 0 to 100 and have a site up immediately without fiddling 
 code, there are other ways to make that happen.
 
 * [Wordpress](https://wordpress.org/) is a free tool that lets you create a website, blog, or app
-using little to no coding, but you can also add lots of code customization in if that's something
+using little to no coding, but you can also add lots of code customization if that's something
 you're up for.
 * It's not free, but [Squarespace](https://www.squarespace.com/) is a popular, modern, easy-to-use
 way to build a website without coding. It does provide options for customizing code with CSS, but
 not to the extent that Wordpress does.
 * [Wix](https://www.wix.com/) is another popular website builder, which offers free and paid plans.
+* If you're really into design but not as interested in learning coding,
+[Webflow](https://webflow.com/) might be right for you.
 
-[To top :arrow_up:](#she-templates)
+[To top](#she-templates) :arrow_up:
