@@ -407,7 +407,7 @@ mobile sizes. An iPhone X, for example, is 375px wide, while an iPad is 768px wi
 [To top](#she-templates) :arrow_up:
 
 
-### JavaScript: Make it do cool stuff
+## JavaScript: Make it do cool stuff
 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) makes the page interactive. We
 can add this functionality between `<script></script>` tags at the bottom of the `<body>` tag in

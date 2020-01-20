@@ -34,6 +34,13 @@ p {
   color: var(--black);
 }
 
+/* Special styles for screens the size of a phone */
+@media (max-width: 375px) {
+  p {
+    font-size: 18px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -169,4 +176,16 @@ nav .brand-logo {
   position: absolute;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+/* Special styles for screens the size of a phone */
+@media (max-width: 375px) {
+  .headshot {
+    max-width: 250px;
+  }
+
+  .quote-wrapper i {
+    left: -25px;
+    top: 25px;
+  }
 }
