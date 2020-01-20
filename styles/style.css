@@ -6,6 +6,7 @@ matches the root element of a document, which is <html> in HTML. This allows us 
 CSS variables to store properties that can be accessed and reused by any element in the document.
 */
 :root {
+  --black: #404040;
   --primary-color: #81d4fa; /* blue */
   --primary-color-lighten-1: #b3e5fc;
   --primary-color-darken-1: #4fc3f7;
@@ -27,6 +28,12 @@ button {
   font-family: var(--primary-font);
 }
 
+body,
+p {
+  color: #404040;
+  color: var(--black);
+}
+
 h1,
 h2,
 h3,
@@ -43,8 +50,7 @@ h5 {
 .btn,
 .btn-large,
 .btn-small {
-  background-color: #ff7043; /* IE fallback */
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-family: 'Playfair Display', serif;
   font-family: var(--primary-font);
 }
@@ -52,8 +58,12 @@ h5 {
 .btn:hover,
 .btn-large:hover,
 .btn-small:hover {
-  background-color: #ff5722; /* IE fallback */
-  background-color: var(--secondary-color-darken-1);
+  background-color: var(--primary-color-darken-1);
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 nav .brand-logo {
@@ -64,10 +74,24 @@ nav .brand-logo {
 
 .logo-em {
   color: var(--primary-color);
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif; /* IE fallback */
   font-family: var(--primary-font);
   font-style: italic;
   font-size: 1.9rem;
+}
+
+.card {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif; /* IE fallback */
+  font-family: var(--primary-font);
+}
+
+.card-title i {
+  color: var(--tertiary-color);
 }
 
 /* ===== /Materialize Overrides ===== */
@@ -76,23 +100,27 @@ nav .brand-logo {
 /* ===== Utility classes ===== */
 
 .primary-bg {
-  background-color: #ba68c8; /* IE fallback */
   background-color: var(--primary-color);
 }
 
 .secondary-bg {
-  background-color: #ff7043; /* IE fallback */
   background-color: var(--secondary-color);
 }
 
 .primary-text {
-  color: #ba68c8; /* IE fallback */
   color: var(--primary-color);
 }
 
+.primary-text-darken {
+  color: var(--primary-color-darken-1);
+}
+
 .secondary-text {
-  color: #ff7043; /* IE fallback */
   color: var(--secondary-color);
+}
+
+.secondary-text-darken {
+  color: var(--secondary-color-darken-1);
 }
 
 .no-shadow {
@@ -103,12 +131,42 @@ nav .brand-logo {
 
 
 .cta-container {
-  background: linear-gradient(var(#ff7043), var(#ffc107)); /* IE fallback */
   background: linear-gradient(var(--secondary-color), var(--tertiary-color));
   padding: 75px 0;
 }
 
 .custom-footer {
-  background: linear-gradient(var(#ff7043), var(#ba68c8)); /* IE fallback */
-  background: linear-gradient(var(--secondary-color), var(--primary-color));
+  background: linear-gradient(var(--tertiary-color), var(--secondary-color));
+}
+
+#image-section-1 {
+  /* Set image and add light gradient overlay above image */
+  background: linear-gradient(0deg, rgb(255, 235, 59, 0.3), rgba(255, 112, 67, 0.3)), url("../images/christina-wocintechchat-com-unsplash-1.jpg");
+  background-size: cover;
+}
+
+#image-section-2 {
+  /* Set image and add light primary color overlay above image */
+  background: linear-gradient(0deg, rgb(129, 212, 250, 0.3), rgba(129, 212, 250, 0.3)), url("../images/christina-wocintechchat-com-unsplash-2.jpg");
+  background-position-y: center;
+  background-size: cover;
+}
+
+.image-section {
+  height: 500px;
+}
+
+.quote-wrapper {
+  font-family: var(--primary-font);
+  padding: 50px 0;
+  position: relative;
+}
+
+.quote-wrapper i {
+  color: var(--secondary-color);
+  left: -35px;
+  top: 35px;
+  position: absolute;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
