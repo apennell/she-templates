@@ -18,7 +18,7 @@ By [Annie Pennell](http://anniepennell.com/)
       * [`<!DOCTYPE html>`](#doctype-html)
       * [`HEAD`](#head)
       * [`BODY`](#body)
-    * [Tags](#elements)
+    * [Elements](#elements)
     * [Attributes](#attributes)
 5. [CSS: Make it look good](#css-make-it-look-good)
     * [Syntax](#syntax)
@@ -157,11 +157,11 @@ beginning to render
 
 * You only use one [`<body></body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
 tag in a document
-* Contains [age content that will render in the browser
+* Contains any content that will render in the browser
 * Import scripts at the bottom, before closing `</body>` tag
 
 
-### Tags
+### Elements
 
 * Tell the browser how to format our content with
 [HTML elements/tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
@@ -340,7 +340,7 @@ side, preceeded by 2 dashes:
 ```css
 :root {
   --primary-color: #ba68c8;
-  --primary-font: 'Libre Baskerville', serif;;
+  --primary-font: 'Libre Baskerville', serif;
 }
 ```
 `:root` is the common choice for where to define the custom properties, because `:root` is the very
@@ -533,13 +533,15 @@ backend? Then check out [**Heroku**](https://www.heroku.com/)!
 If you've taken your static site as far as it can go and want to keep learning and building, here
 are some next steps:
 
+* Learn JavaScript! This is a key language used by frontend developers, and can serve as a stepping
+stone to learn any other code language.
 * *Loving JavaScript and ready to make it do way more?* Get to know the
 [most popular](https://2019.stateofjs.com/front-end-frameworks/) frontend framework,
 [React](https://reactjs.org/), by starting an app using
 [`create-react-app`](https://github.com/facebook/create-react-app). Run just one command and have a
 modern web app created immediately, then make it your own!
 * *Loving JavaScript and curious to learn the backend?* Then [Node.js](https://nodejs.org/en/)
-might be for you. Node.js allows you to build a backend using JavaScript.
+might be for you. Node.js is a JavaScript runtime that allows you to build a backend using JavaScript.
 * *Think JavaScript is okay, but want to see what else is out there?*
 [Ruby on Rails](https://rubyonrails.org/) is a popular web application framework that's pretty
 [quick to get started](https://www.ruby-lang.org/en/documentation/quickstart/) working with.
