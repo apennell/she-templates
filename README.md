@@ -2,14 +2,13 @@
 
 [View Demo](https://apennell.github.io/she-templates/)
 
-**She Templates** is the most basic responsive site template needed for the girl who's ready to
-build an empire and needs to start right away!
-
-By [Annie Pennell](http://anniepennell.com/)
+**She Templates** is a basic responsive site template for the girl who's ready to build an empire
+that's anything but basic. Developed by [Annie Pennell](http://anniepennell.com/) as a supplement
+to the HTML Web Development workshop at the [Generation She](https://www.generationshe.co/) 2020
+Entrepreneurship Makeathon.
 
 
 ## Table of Contents
-
 1. [Technologies](#technologies-and-dependencies)
 2. [Getting Started](#getting-started)
 3. [Code Structure](#code-structure)
@@ -37,6 +36,9 @@ By [Annie Pennell](http://anniepennell.com/)
 9. [Releasing your site](#releasing-your-site)
 10. [Making your site do even more](#making-your-site-do-even-more)
 11. [Alternatives to coding your own](#alternatives-to-coding-your-own)
+12. [Additional Resources](#additional-resources)
+    * [Free Online Courses](#free-online-courses)
+    * [Clubs and Organizations](#clubs-and-organizations)
 
 
 ## Technologies and Dependencies
@@ -99,6 +101,9 @@ then select "Open file..." and find and select `index.html`.
   * Can include imported JS files from other libraries, eg `materialize.min.js`
 * **`/images`**
   * Where we put any images that we want to save and display
+  * Be sure to always use images you have permission for! [Unsplash](https://unsplash.com/) is a
+  great resource for copyright-free photos.
+  * If you don't use the images included with the template, don't forget to delete them!
 
 
 ## HTML: Make it say what you want
@@ -132,8 +137,13 @@ Start your document with `<!DOCTYPE html>` to indicate that it's using
 
 #### `<html>`
 
-This is the [root element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) of an
+* This is the [root element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html) of an
 HTML page.
+* Pass the [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)
+attribute so that screen readers know what to language to announce and how to pronounce words:
+  ```html
+  `<html lang="en">`
+  ```
 
 
 #### `<head>`
@@ -144,7 +154,11 @@ certain information that the browser needs to know
 * [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title) lets the browser know
 the site's name, which is used in the browser's title bar or page's tab
 * [`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link) tag lets us import CSS
-files and fonts--either from local files (relative links) or internet sources (absolute links)
+files and [fonts](https://fonts.google.com/)--either from local files (relative links) or internet
+sources (absolute links). For example, to use styles.css, we need to import it here by adding:
+  ```html
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  ```
 * You may add any [scripts](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script) that
 are needed immediately when browser starts loading here, but for improved performance, add scripts
 at the end of `body` wherever possible so that the content isn't held up by a long script before
@@ -157,7 +171,7 @@ beginning to render
 
 * You only use one [`<body></body>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body)
 tag in a document
-* Contains any content that will render in the browser
+* This is where we put all HTML content that will render in the browser
 * Import scripts at the bottom, before closing `</body>` tag
 
 
@@ -165,7 +179,7 @@ tag in a document
 
 * Tell the browser how to format our content with
 [HTML elements/tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-* Need to start with an opening tag: `< >` and end with a closing tag: `</ >`:
+* Most elements must start with an opening tag: `< >` and end with a closing tag: `</ >`:
   ```html
   <div>
     <h1>Title</h1>
@@ -217,10 +231,11 @@ tag in a document
 you can send to an HTML element so they behave a certain way, like:
   * [class](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class): a group
   identifier that can be used on any kind of HTML element. One element can have multiple classes,
-  separated by spaces.
+  separated by spaces, and multiple elements can use the same class.
   `<p class="white-text small">A Bit of Text</p>`
   * [id](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id): a unique
-  identifier that can be used on any kind of HTML element. An element can only have one `id`.
+  identifier that can be used on any kind of HTML element. An element can only have one `id` and
+  its id should be unique on the page.
   `<p id="intro">This is some unique intro text.</p>`
   * `type`: can only be used with certain elements, such as `button` and  `input`
 * `class` and `id` let you group and name tags, which can then be used to target with CSS and JavaScript.
@@ -251,8 +266,8 @@ to a [declaration block](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
 `{}`)
 * A declaration block contains one or more declarations separated by semicolons: `background-color: #ba68c8`
 * A declaration includes a CSS
-[property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) name (`color`,
-`font-family`) and value (`#ffffff`, `'Libre Baskerville', serif`), separated by a colon
+[property](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference) name
+(`background-color`) and value (`#ba68c8`), separated by a colon
 
 
 #### Selectors and specificty
@@ -283,8 +298,32 @@ header {
 ```
 
 The answer is red! Although all 3 CSS rules target the same element, `#header-1` wins with the
-greatest specificity. *However*, it's best to avoid using id for CSS and use classes or HTML tag
-types wherever possible.
+greatest specificity.
+
+*However*, it's best to avoid using id for CSS and use classes or HTML tag types wherever possible because we want to make our code as reusable as we can. An example where it would be okay is the use
+of image `div`s in our template:
+```html
+<div class="image-section" id="image-section-1"></div>
+```
+```css
+#image-section-1 {
+  /* Set image and add light gradient overlay above image */
+  background: linear-gradient(0deg, rgb(255, 235, 59, 0.3), rgba(255, 112, 67, 0.3)), url("../images/christina-wocintechchat-com-unsplash-1.jpg");
+}
+
+#image-section-2 {
+  /* Set image and add light primary color overlay above image */
+  background: linear-gradient(0deg, rgb(129, 212, 250, 0.3), rgba(129, 212, 250, 0.3)), url("../images/christina-wocintechchat-com-unsplash-2.jpg");
+}
+
+.image-section {
+  height: 500px;
+}
+```
+Because both `.image-section` `div`s share a height of `500px`, we set that style on the shared class
+so we only have to write it once and they stay consistent. Because we're setting the image url using
+the `background` property with a gradient overlay, we know we won't want any other elements to share
+that declaration and can target each one directly.
 
 
 #### Common CSS Properties
@@ -475,7 +514,7 @@ A popular alternative to consider is Twitter's [**Bootstrap**](https://getbootst
 
 ### Icons
 
-* All of [Google's Material Design icons](https://material.io/resources/icons/?style=baseline) are
+All of [Google's Material Design icons](https://material.io/resources/icons/?style=baseline) are
 available because we imported them into the `HEAD` of our Index.html file using a
 [CDN](https://developer.mozilla.org/en-US/docs/Glossary/CDN) link. Search for
 [all options here](https://materializecss.com/icons.html). To use the icon, add it in your HTML
@@ -483,8 +522,9 @@ where you want it to appear using this syntax: `<i class="material-icons">arrow_
 replacing the content inside the `<i>` with the name of the icon you want. You can also change
 the size by adding one of these classes: `tiny`, `small`, `medium`, `large`.
 Eg: `<i class="large material-icons">cloud</i>`
-* Another popular font library is [Font Awesome](https://fontawesome.com/). If you'd like to use
-this instead, remove
+
+Another popular font library is [**Font Awesome**](https://fontawesome.com/). If you'd like to use
+that instead, remove
 `<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">` from the
 `HEAD` of index.html so that you don't import unnecessary code.
 
@@ -565,3 +605,27 @@ not to the extent that Wordpress does.
 [Webflow](https://webflow.com/) might be right for you.
 
 [To top](#she-templates) :arrow_up:
+
+
+## Additional Resources
+
+### Free Online Courses
+
+* [**General Assembly Dash**](https://dash.generalassemb.ly/) -- quick and basic intro to HTML/CSS/JS
+principles
+* [**Codecademy**](https://www.codecademy.com/) -- follow along with tutorials on many programming
+subjects
+* [**freeCodeCamp**](https://www.freecodecamp.org/) -- build projects and earn certifications
+* [**Grasshopper coding app**](https://grasshopper.app/) -- learn JavaScript with this app
+* [**Made with Code**](https://www.madewithcode.com/) -- short block-based (not text-based coding)
+projects geared toward teen girls to learn computer science/coding principles (by Google)
+* [**Scratch**](https://scratch.mit.edu/) -- learn computer science/coding principles by creating
+block-based games and animations (not text-based coding) (by MIT)
+
+### Clubs and Organizations
+
+* [Generation She](https://www.generationshe.co/)
+* [Girls Who Code](https://girlswhocode.com/)
+* [Built By Girls](https://www.builtbygirls.com/for-students)
+* [Black Girls Code](http://www.blackgirlscode.com/)
+* [Code.org](https://code.org/)
