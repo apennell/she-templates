@@ -51,7 +51,7 @@ This simple boilerplate template uses [HTML](https://developer.mozilla.org/en-US
 You will also need a code text editor, such as [VSCode](https://code.visualstudio.com/) or
 [Sublime Text](https://www.sublimetext.com/3), and a [GitHub account](https://github.com/join).
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 <!-- TODO: expand on specifics/ensure this works -->
@@ -75,7 +75,7 @@ then select "Open file..." and find and select `index.html`.
 `styles/style.css` file, and make it interactive by adding JavaScript to `scripts/script.js`!
 7. Go back to `index.html` in your web browser at any time and refresh the page to view changes
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## Code Structure
@@ -240,7 +240,7 @@ you can send to an HTML element so they behave a certain way, like:
   * `type`: can only be used with certain elements, such as `button` and  `input`
 * `class` and `id` let you group and name tags, which can then be used to target with CSS and JavaScript.
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## CSS: Make it look good
@@ -443,7 +443,7 @@ or smaller; if it's wider than 720px, it will be `40px`.
 We always want to look at our website at many different browser widths, all the way down to common
 mobile sizes. An iPhone X, for example, is 375px wide, while an iPad is 768px wide.
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## JavaScript: Make it do cool stuff
@@ -475,7 +475,7 @@ The Materialize CSS library we're using requires it for actions like opening the
 *if you're not using Materialize's JavaScript helpers and not using jQuery yourself*, then remove
 that link from index.html for a slightly faster load time.
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## Materialize CSS
@@ -528,7 +528,7 @@ that instead, remove
 `<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">` from the
 `HEAD` of index.html so that you don't import unnecessary code.
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## Releasing your site
@@ -565,7 +565,7 @@ on deploying to AWS.
 Did you take your site way beyond the scope of this static site template and have an app with a
 backend? Then check out [**Heroku**](https://www.heroku.com/)!
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## Making your site do even more
@@ -586,7 +586,7 @@ might be for you. Node.js is a JavaScript runtime that allows you to build a bac
 [Ruby on Rails](https://rubyonrails.org/) is a popular web application framework that's pretty
 [quick to get started](https://www.ruby-lang.org/en/documentation/quickstart/) working with.
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## Alternatives to coding your own from scratch
@@ -604,7 +604,7 @@ not to the extent that Wordpress does.
 * If you're really into design but not as interested in learning coding,
 [Webflow](https://webflow.com/) might be right for you.
 
-[To top](#she-templates) :arrow_up:
+[To top](#table-of-contents) :arrow_up:
 
 
 ## Additional Resources
@@ -629,3 +629,5 @@ block-based games and animations (not text-based coding) (by MIT)
 * [Built By Girls](https://www.builtbygirls.com/for-students)
 * [Black Girls Code](http://www.blackgirlscode.com/)
 * [Code.org](https://code.org/)
+
+[To top](#table-of-contents) :arrow_up:
