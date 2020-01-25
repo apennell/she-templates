@@ -9,14 +9,15 @@ Entrepreneurship Makeathon.
 
 
 ## Table of Contents
-1. [Technologies](#technologies-and-dependencies)
+1. [Technologies and Dependencies](#technologies-and-dependencies)
 2. [Getting Started](#getting-started)
 3. [Code Structure](#code-structure)
 4. [HTML: Make it say what you want](#html-make-it-say-what-you-want)
     * [Basic HTML document structure](#basic-html-document-structure)
       * [`<!DOCTYPE html>`](#doctype-html)
-      * [`HEAD`](#head)
-      * [`BODY`](#body)
+      * [`html`](#html)
+      * [`head`](#head)
+      * [`body`](#body)
     * [Elements](#elements)
     * [Attributes](#attributes)
 5. [CSS: Make it look good](#css-make-it-look-good)
@@ -27,16 +28,11 @@ Entrepreneurship Makeathon.
     * [Responsiveness](#responsiveness)
 6. [Javascript: Make it do cool stuff](#javascript-make-it-do-cool-stuff)
 7. [Materialize CSS](#materialize-css)
-8. [Customizing your site](#customizing-your-site)
-    * [Colors and fonts](#colors-and-fonts)
-    * [Navigation bar](#navigation-bar)
-    * [Header](#header)
-    * [Additional content](#additional-content)
     * [Icons](#icons)
-9. [Releasing your site](#releasing-your-site)
-10. [Making your site do even more](#making-your-site-do-even-more)
-11. [Alternatives to coding your own](#alternatives-to-coding-your-own)
-12. [Additional Resources](#additional-resources)
+8. [Releasing your site](#releasing-your-site)
+9. [Making your site do even more](#making-your-site-do-even-more)
+10. [Alternatives to coding](#alternatives-to-coding)
+11. [Additional Resources](#additional-resources)
     * [Free Online Courses](#free-online-courses)
     * [Clubs and Organizations](#clubs-and-organizations)
 
@@ -104,6 +100,8 @@ then select "Open file..." and find and select `index.html`.
   * Be sure to always use images you have permission for! [Unsplash](https://unsplash.com/) is a
   great resource for copyright-free photos.
   * If you don't use the images included with the template, don't forget to delete them!
+
+[To top](#table-of-contents) :arrow_up:
 
 
 ## HTML: Make it say what you want
@@ -248,7 +246,7 @@ you can send to an HTML element so they behave a certain way, like:
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) controls the style of the HTML content
 
 
-#### Syntax
+### Syntax
 
 ```css
 .primary-bg {
@@ -270,7 +268,7 @@ to a [declaration block](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax
 (`background-color`) and value (`#ba68c8`), separated by a colon
 
 
-#### Selectors and specificty
+### Selectors and specificity
 
 CSS stands for "Cascading Style Sheets" and "cascading" refers to how the language handles deciding
 which rule to abide when multiple rules apply to one element. It follows
@@ -326,7 +324,7 @@ the `background` property with a gradient overlay, we know we won't want any oth
 that declaration and can target each one directly.
 
 
-#### Common CSS Properties
+### Common CSS Properties
 
 * [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display): sets whether the element
 is block or inline
@@ -361,7 +359,7 @@ sets the color of the element's background. There are 5 ways to declare the valu
     the color on a scale of `0` (fully transparent) to `1` (fully opaque)
 
 
-#### Custom properties (CSS variables)
+### Custom properties (CSS variables)
 
 Commonly known as CSS variables,
 [custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
@@ -419,7 +417,7 @@ body {
 ```
 
 
-#### Responsiveness
+### Responsiveness
 Responsive design allows a site to look good on any device, regardless off the screen/browser size.
 We can use CSS to make the appearance of our content adapt well to different browser widths, so that
 it looks just as good on a phone as it does on a large desktop computer.
@@ -589,7 +587,7 @@ might be for you. Node.js is a JavaScript runtime that allows you to build a bac
 [To top](#table-of-contents) :arrow_up:
 
 
-## Alternatives to coding your own from scratch
+## Alternatives to coding
 
 If you need to go from 0 to 100 and have a site up immediately without fiddling too much with the
 code, there are other ways to make that happen.
